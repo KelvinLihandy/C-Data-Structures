@@ -30,10 +30,10 @@ int getMax(int a, int b){
 
 //right rotation
 /*
-		 C*		      B
+		 C*		          B
 	   /  \			    /   \
 	  B*   y	=> 	   A	 C
-	 / \  				/ \
+	 / \  				    / \
 	A   x*			       x   y
 	
 	*yang terdampak/posisi yang berubah
@@ -234,11 +234,13 @@ int main(){
 	root = push(root, 7);
 	root = push(root, 14);
 	root = push(root, 16);
-	
+	// for(int i = 0; i < 1000; i++){
+	// 	root = push(root, i);
+	// }
 	inOrder(root);
 	
 	root = pop(root, 10);
-	
+	inOrder(root);
 	return 0;
 }
 
